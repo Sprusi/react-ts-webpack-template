@@ -9,7 +9,7 @@ export const Default = () => {
       <div className={styles.defaultContent}>
         <h1>{count}</h1>
         <button className={styles.defaultContentButton} onClick={() => setCount((prev) => prev + 1)}>
-          {'+'}
+          +
         </button>
       </div>
     </div>
