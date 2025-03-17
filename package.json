@@ -7,7 +7,7 @@
     "start": "yarn lint && webpack serve --env mode=development --env hot=true",
     "build": "yarn run clean && yarn lint && webpack --env mode=production",
     "build:dev": "yarn run clean && yarn lint && webpack --env mode=development",
-    "lint": "eslint src",
+    "lint": "eslint --config ./settings/eslint/.eslintrc.js --ignore-path settings/eslint/.eslintignore src",
     "clean": "rm -rf build",
     "analyzer": "webpack --env mode=production --env analyzer=true"
   },
